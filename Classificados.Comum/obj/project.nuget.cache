@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q0roptml9n9KGEPOBEvqJYEZdP15L51ElL5hWaGPrwkvX6v6yBeEwqFs5SrKW+r6ZnGgjMKmD7oPoDKClimMlQ==",
+  "success": true,
+  "projectFilePath": "G:\\Senai\\Projetos\\LEVO\\ClassificadosApi\\Classificados.Comum\\Classificados.Comum.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wrlma\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\wrlma\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
+    "C:\\Users\\wrlma\\.nuget\\packages\\flunt.br\\1.4.0\\flunt.br.1.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
