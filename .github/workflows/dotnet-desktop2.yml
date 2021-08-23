@@ -120,8 +120,8 @@ jobs:
       uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v1
       with:
     # API key for connecting to ASoC.
-      asoc_key: 
+      ASOC_KEY: 
     # Secret for connecting to ASoC.
-      asoc_secret: 
+      ASOC_SECRET: 
     # The status of the checks if any security issues are found. One of action_required, failure, or neutral.
       status: # optional, default is neutral
