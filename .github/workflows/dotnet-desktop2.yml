@@ -114,14 +114,17 @@ jobs:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
     #hcl
-    - name: HCL AppScan CodeSweep
-    # You may pin to the exact commit or the version.
-    # uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@967f17b25f94a4bd5de1fa712a63c3aedc4edfe6
-      uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v1
-      with:
-    # API key for connecting to ASoC.
-      ASOC_KEY: 
-    # Secret for connecting to ASoC.
-      ASOC_SECRET: 
-    # The status of the checks if any security issues are found. One of action_required, failure, or neutral.
-      status: # optional, default is neutral
+      on: [pull_request]
+      jobs:
+        scan:
+        runs-on: ubuntu-latest
+        steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Run AppScan CodeSweep
+        uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v1
+        with:
+          asoc_key: ${{secrets.ASOC_KEY}}
+          asoc_secret: ${{secrets.ASOC_SECRET}}
+        env: 
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
